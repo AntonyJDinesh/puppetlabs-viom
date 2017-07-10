@@ -1,5 +1,5 @@
 {
-  "name": "antonyjdinesh-viom",
+  "name": "puppetlabs-viom",
   "version": "0.1.0",
   "author": "Antony J Dinesh",
   "summary": "Module for installing Veritas Infoscale Operations Manager",
@@ -7,9 +7,8 @@
   "source": "https://github.com/AntonyJDinesh/puppetlabs-viom.git",
   "project_page": "https://github.com/AntonyJDinesh/puppetlabs-viom.git",
   "issues_url": "https://github.com/AntonyJDinesh/puppetlabs-viom/issues",
+  "data_provider": null,
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
-  ],
-  "data_provider": null
+  ]
 }
-
