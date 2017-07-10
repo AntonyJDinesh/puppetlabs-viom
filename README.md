@@ -20,7 +20,11 @@ Basic requirement is, The VRTSsfmcs & VRTSsfmh packages should present in yum re
 ## Usage
 
 node 'rhel7-n1' {
-    class { 'sfha' }
+    class { 'viom':
+       operation        => "uninstall",
+       db_location      => "/var/opt/VRTSsfmcs/db",
+       enable_analytics => "1",
+    }
 }
 
 ## Limitations
