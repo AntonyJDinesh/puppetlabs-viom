@@ -19,6 +19,18 @@ Basic requirement is, The VRTSsfmcs & VRTSsfmh packages should present in yum re
 
 ## Usage
 
+For installing VIOM
+
+node 'rhel7-n1' {
+    class { 'viom':
+       operation        => "install",
+       db_location      => "/var/opt/VRTSsfmcs/db",
+       enable_analytics => "1",
+    }
+}
+
+For uninstalling VIOM
+
 node 'rhel7-n1' {
     class { 'viom':
        operation        => "uninstall",
@@ -29,4 +41,4 @@ node 'rhel7-n1' {
 
 ## Limitations
 
-This is puppet module is oly for RHEL
+This puppet module is only for RHEL.
